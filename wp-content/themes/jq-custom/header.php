@@ -75,6 +75,6 @@ div.preview {margin:15px 0;}
 <!-- page navigation -->
 <div id="nav" class="clearfix">
 <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
-<? include ( get_template_directory(). "/searchform.php" ); ?>
+<?php get_search_form(); ?>
 </div>
 <!-- ending header template -->
