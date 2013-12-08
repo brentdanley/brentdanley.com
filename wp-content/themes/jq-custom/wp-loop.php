@@ -19,12 +19,12 @@ foreach ($options as $value) {
 ?>
 <div class="excerpt">
 <?php /* Post options */
-if ($jq_post_display == "false") {
-the_content();
-wp_link_pages();
-} else { 
+    if ( has_post_thumbnail() ) {
+        the_post_thumbnail( '150_thumb' );
+    }
 the_excerpt();
-} ?>	
+wp_link_pages();
+ ?>	
 <div class="clearfix"></div>
 <p class="tag_info">
 <?php $tag = get_the_tags(); if (! $tag) {echo "No tags";} else {the_tags('', ' &middot; ', '');} ?>

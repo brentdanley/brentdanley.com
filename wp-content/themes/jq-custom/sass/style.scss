@@ -6,6 +6,7 @@ Template: jq
 */
 
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,900,300italic,400italic,900italic);
+@import "compass";
 
 /*       ###############################
          Sass VARIABLES
@@ -211,18 +212,57 @@ p.not-found {padding: 0 0 0 20px; margin:0;}
 
 img.alignright {float:right; margin:0 0 30px 30px;}
 img.alignleft {float:left; margin:0 50px 30px 0;}
-img.aligncenter {display:block; margin-left:auto; margin-right:auto; height: auto;}
 a img.alignright {float:right; margin:0 0 30px 30px;}
 a img.alignleft {float:left; margin:0 50px 30px 0;}
-a img.aligncenter {display:block; margin-left:auto; margin-right:auto;}
+a {
+	img {
+		&.aligncenter {
+			@include border-radius(20px);
+			border: 1px solid #ddd; 
+			background-color: #4E667C; 
+			padding: 20px; 
+			margin: 10px auto;
+			display:block; 
+			height: auto;
+			@include box-sizing(border-box);
+			border: thin solid black;
+			@include border-radius(10px);
+			@include single-box-shadow(white, 0, 0, 5px, 3px);
+		}
+	}
+}
 
 .aligncenter, div.aligncenter {display:block; margin-left:auto; margin-right:auto;}
 .alignleft {float:left;}
 .alignright {float:right;}
 
-.wp-caption {border:1px solid #ddd; text-align:center; background-color:#f3f3f3; padding-top:4px; margin:10px;}
-.wp-caption img {margin:0;padding:0;border:0 none;}
-.wp-caption p.wp-caption-text {font-size:110%; line-height:17px; padding:0 4px 5px; margin:0;}
+.wp-caption {
+	@include border-radius(20px);
+	border: 1px solid #ddd; 
+	text-align: center; 
+	background-color: #4E667C; 
+	padding: 20px; 
+	margin: 10px auto;
+	@include box-sizing(border-box);
+	img {
+		margin: 0;
+		padding: 0;
+		border: thin solid black;
+		@include border-radius(10px);
+		@include single-box-shadow(white, 0, 0, 5px, 3px);
+		display: block;
+		width: 100%;
+	}
+	p.wp-caption-text {
+		text-align: left;
+		color: white;
+		font-size: 1.6rem;
+		line-height: 1.2;
+		padding: 10px 0 0 5px;
+		font-style: italic;
+		margin: 0;
+	}
+}
 
 /*        ##################################
            SUPERFISH
