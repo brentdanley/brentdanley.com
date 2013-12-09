@@ -28,5 +28,7 @@ wp-content/plugins/*
 # Ignore everything in the "themes" directory, except the themes you
 # specify (see the commented-out example for a hint on how to do this.)
 wp-content/themes/*
+!wp-content/themes/brentdanley/
+wp-content/themes/brentdanley/.sass-cache*
 !wp-content/themes/jq-custom/
 wp-content/themes/jq-custom/.sass-cache*
