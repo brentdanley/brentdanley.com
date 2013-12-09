@@ -1,0 +1,15 @@
+@import url("../twentythirteen/style.css");
+/*
+  Theme Name:   brentdanley.com default
+  Description:  Default theme for brentdanley.com
+  Author:       Brent Danley   
+  Author URI:   http://brentdanley.com/
+  Template:     twentythirteen
+  Version:      1.0.0
+*/
+/* = Theme customization starts here
+ * ----------------------------------------------*/
+/* line 17, sass/style.scss */
+#page h1 {
+  text-shadow: 1px 1px 1px #aaaaaa;
+}

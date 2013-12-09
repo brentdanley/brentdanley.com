@@ -1,0 +1,20 @@
+/*!
+  Theme Name:   brentdanley.com default
+  Description:  Default theme for brentdanley.com
+  Author:       Brent Danley   
+  Author URI:   http://brentdanley.com/
+  Template:     twentythirteen
+  Version:      1.0.0
+*/
+
+@import url("../twentythirteen/style.css");
+@import "compass";
+
+/* = Theme customization starts here
+ * ----------------------------------------------*/
+
+#page {
+	h1 {
+		@include single-text-shadow($hoff: 1px, $voff: 1px);
+	}
+}
