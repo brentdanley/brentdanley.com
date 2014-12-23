@@ -3,18 +3,22 @@
   Description:  Default theme for brentdanley.com
   Author:       Brent Danley   
   Author URI:   http://brentdanley.com/
-  Template:     twentythirteen
+  Template:     twentyfourteen
   Version:      1.0.0
 */
 
-@import url("../twentythirteen/style.css");
+@import url("../twentyfourteen/style.css");
 @import "compass";
+@import "twitter_widget";
 
 /* = Theme customization starts here
  * ----------------------------------------------*/
 
-#page {
-	h1 {
-		@include single-text-shadow($hoff: 1px, $voff: 1px);
+.widget {
+	margin-bottom: 25px;
+	&.widget_categories {
+		.cat-item-1 {
+			display: none; /* hides "Uncategorized" category from list. */
+		}
 	}
 }
