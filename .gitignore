@@ -32,3 +32,5 @@ wp-content/themes/*
 wp-content/themes/brentdanley/.sass-cache*
 !wp-content/themes/jq-custom/
 wp-content/themes/jq-custom/.sass-cache*
+!wp-content/themes/ZF_brentdanley/
+wp-content/themes/ZF_brentdanley/.sass-cache*
