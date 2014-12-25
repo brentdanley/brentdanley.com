@@ -1,15 +1,30 @@
-@import url("../twentythirteen/style.css");
+@import url("../twentyfourteen/style.css");
 /*
   Theme Name:   brentdanley.com default
   Description:  Default theme for brentdanley.com
   Author:       Brent Danley   
   Author URI:   http://brentdanley.com/
-  Template:     twentythirteen
+  Template:     twentyfourteen
   Version:      1.0.0
 */
+/* _twitter_widget.scss - Styles for the Twitter widget in the sidebar. */
+/* line 4, sass/_twitter_widget.scss */
+#twitter-2 .entry-content {
+  padding: 0;
+}
+/* line 7, sass/_twitter_widget.scss */
+#twitter-2 .entry-meta {
+  padding: 0;
+}
+
 /* = Theme customization starts here
  * ----------------------------------------------*/
 /* line 17, sass/style.scss */
-#page h1 {
-  text-shadow: 1px 1px 1px #aaaaaa;
+.widget {
+  margin-bottom: 25px;
+}
+/* line 20, sass/style.scss */
+.widget.widget_categories .cat-item-1 {
+  display: none;
+  /* hides "Uncategorized" category from list. */
 }
