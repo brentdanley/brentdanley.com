@@ -31,5 +31,6 @@ wp-content/themes/*
 !wp-content/themes/brentdanley/
 !wp-content/themes/jq-custom/
 !wp-content/themes/ZF_brentdanley/
+!wp-content/themes/_brentdanley/
 
 .sass-cache*
