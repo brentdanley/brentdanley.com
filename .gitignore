@@ -29,8 +29,7 @@ wp-content/plugins/*
 # specify (see the commented-out example for a hint on how to do this.)
 wp-content/themes/*
 !wp-content/themes/brentdanley/
-wp-content/themes/brentdanley/.sass-cache*
 !wp-content/themes/jq-custom/
-wp-content/themes/jq-custom/.sass-cache*
 !wp-content/themes/ZF_brentdanley/
-wp-content/themes/ZF_brentdanley/.sass-cache*
+
+.sass-cache*
