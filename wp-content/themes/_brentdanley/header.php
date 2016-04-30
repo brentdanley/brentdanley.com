@@ -28,9 +28,9 @@
 		<div class="site-branding">
 			<?php
 			if ( is_front_page() && is_home() ) : ?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?> | <?php echo getSiteDescription(); ?></a></h1>
+				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' );  echo getSiteDescription(); ?></a></h1>
 			<?php else : ?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?> | <?php echo getSiteDescription(); ?></a></p>
+				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' );  echo getSiteDescription(); ?></a></p>
 			<?php
 			endif;
 
@@ -38,7 +38,7 @@
 			{
 				$description = get_bloginfo('description', 'display');
 				if ($description || is_customize_preview()) :
-					return '<span class="site-description">' . $description /* WPCS: xss ok. */ . '</span>';
+					return '<span class="site-description"> | ' . $description /* WPCS: xss ok. */ . '</span>';
 				endif;
 
 				return false;
