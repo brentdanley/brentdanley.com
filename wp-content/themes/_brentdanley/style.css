@@ -47,6 +47,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 @import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300&subset=latin,latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Cutive+Mono);
 /* line 5, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -1108,12 +1109,12 @@ object {
   display: block;
 }
 
-/* line 6, sass/_partials/_layout.scss */
+/* line 7, sass/_partials/_layout.scss */
 body {
   background: #00a0d2;
 }
 
-/* line 10, sass/_partials/_layout.scss */
+/* line 11, sass/_partials/_layout.scss */
 #page {
   position: relative;
   max-width: 730px;
@@ -1126,18 +1127,19 @@ body {
   -webkit-box-shadow: 0 0 30px #888888;
   box-shadow: 0 0 30px #888888;
 }
-/* line 21, sass/_partials/_layout.scss */
+/* line 22, sass/_partials/_layout.scss */
 #page a {
   color: black;
+  text-decoration: none;
 }
-/* line 25, sass/_partials/_layout.scss */
+/* line 27, sass/_partials/_layout.scss */
 #page .post {
   position: relative;
 }
 
 /* line 3, sass/_partials/_masthead.scss */
-#masthead {
-  color: red;
+.site-header {
+  font-family: "Cutive Mono";
 }
 
 /* line 3, sass/_partials/_hamburger-menu.scss */
