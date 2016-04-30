@@ -21,6 +21,8 @@
 </head>
 
 <body <?php body_class(); ?>>
+
+<?php get_sidebar(); ?>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', '_brentdanley' ); ?></a>
 
