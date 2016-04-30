@@ -50,8 +50,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
-@import "_partials/layout";
-@import "_partials/masthead";
+@import "compass/css3";
 
 /*--------------------------------------------------------------
 # Normalize
@@ -933,3 +932,11 @@ object {
 .gallery-caption {
 	display: block;
 }
+
+// Custom partials
+
+@import "_partials/variables";
+@import "_partials/layout";
+@import "_partials/masthead";
+@import "_partials/hamburger-menu";
+@import "_partials/post-date";

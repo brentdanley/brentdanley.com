@@ -1,0 +1,23 @@
+// _hamburger-menu.scss - Styles aside.secondary, which is normally hidden.
+
+#secondary {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  background-color: $primary-color;
+  padding: 70px 10px 0;
+
+  &.widget-area {
+
+    ul, ol {
+      margin: 0;
+    }
+
+    li {
+      list-style: none;
+      list-style-position: outside;
+    }
+  }
+}
